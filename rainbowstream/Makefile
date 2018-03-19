@@ -6,4 +6,5 @@ run:
 	@echo "+ $@"
 	sudo docker run --rm -it \
 		-v ~/.rainbow_oauth:/root/.rainbow_oauth \
+		-v ~/.rainbow_config.json:/root/.rainbow_config.json \
 		rainbowstream:latest
