@@ -1,6 +1,9 @@
 build:
 	@echo "+ $@"
-	sudo docker build -t rainbowstream:latest .
+	sudo docker build \
+		--rm=true \
+		--no-cache \
+		-t rainbowstream:latest .
 
 run:
 	@echo "+ $@"
